@@ -10,3 +10,60 @@
 #FFF8D2 - Cream White
 
 **/
+
+/**
+* ============
+* === body ===
+* ============
+**/
+
+body{
+    margin:0;
+}
+
+/**
+* ============
+* === mainbox ===
+* ============
+**/
+
+.MainBox {
+    width:1000px;
+    background-color:#FFF8D2;
+    margin:0px auto 0;
+    height:1000px;
+}
+
+/**
+* ============
+* === topbar ===
+* ============
+**/
+
+.topbar {
+    width:1000px;
+    height:50px;
+    background-color:#5A6373;
+}
+
+/**
+* ============
+* === menu ===
+* ============
+**/
+
+.menu {
+   text-decoration:none;
+   list-style:none;
+   float:right;
+}
+
+    .menu li {
+        float:left;
+        padding:10px;
+    }
+
+        .menu li a {
+            text-decoration:none;
+            color:#323442;
+        }
