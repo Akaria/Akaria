@@ -3,11 +3,11 @@
 * === Colors used ===
 * ============
 
-#A11D5D - Pink
-#323442 - Dark Grey
-#5A6373 - Medium Grey
-#858D9C - Light Grey
-#FFF8D2 - Cream White
+#4F4738 - brown
+#FFFFFD - offwhite
+#27616A - blue
+#AB9E77 - Light brown
+#FFFDFB - offwhiteis
 
 **/
 
@@ -19,6 +19,7 @@
 
 body{
     margin:0;
+    background-color:#FFFFFD;
 }
 
 /**
@@ -29,21 +30,35 @@ body{
 
 .MainBox {
     width:1000px;
-    background-color:#FFF8D2;
     margin:0px auto 0;
-    height:1000px;
 }
 
 /**
 * ============
-* === topbar ===
+* === Logo ===
 * ============
 **/
 
-.topbar {
-    width:1000px;
+.logo {
+    height:100px;
+}
+
+    .logo p {
+        color:#27616A;
+        font-size:60px;
+    }
+
+
+/**
+* ============
+* === MenuBar ===
+* ============
+**/
+
+.MenuBar {
     height:50px;
-    background-color:#5A6373;
+    background-color:#27616A;
+    margin-top:50px;
 }
 
 /**
@@ -55,15 +70,17 @@ body{
 .menu {
    text-decoration:none;
    list-style:none;
-   float:right;
+   float:center;
+   padding-left:250px;
 }
 
     .menu li {
         float:left;
-        padding:10px;
+        margin:15px 20px 10px 10px;
     }
 
         .menu li a {
             text-decoration:none;
-            color:#323442;
+            color:#FFFDFB;
+            text-transform:uppercase;
         }
