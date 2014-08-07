@@ -3,84 +3,154 @@
 * === Colors used ===
 * ============
 
-#4F4738 - brown
-#FFFFFD - offwhite
-#27616A - blue
-#AB9E77 - Light brown
-#FFFDFB - offwhiteis
+#A11D5D - Pink
+#323442 - Dark Grey
+#5A6373 - Medium Grey
+#858D9C - Light Grey
+#FFF8D2 - Creme
 
 **/
 
+/**
+Fonts
+**/
+ h1 {
+    color:#A11D5D;
+    font-size:22px;
+}
+p {
+    color:#5A6373;
+    font-size:14px;
+}
+a {
+    text-decoration:none;
+    color:#FFF8D2;
+    font-size:14px;
+    
+}
 /**
 * ============
 * === body ===
 * ============
 **/
-
-body{
-    margin:0;
-    background-color:#FFFFFD;
+ body {
+    margin:0px;
+    background-color:#FFF8D2;
+    font-family:Droid Sans Mono;
+    padding:0px;
 }
-
 /**
-* ============
-* === mainbox ===
-* ============
+TopBar
 **/
-
-.MainBox {
-    width:1000px;
+ .topbar {
+    height:50px;
+    background-color:#323442;
+}
+/**
+Container
+**/
+ .container {
+    Width:1000px;
     margin:0px auto 0;
 }
 
 /**
-* ============
-* === Logo ===
-* ============
+logo
 **/
 
 .logo {
-    height:100px;
+    width:200px;
+    display:inline-block;
 }
 
     .logo p {
-        color:#27616A;
-        font-size:60px;
+        color:#FFF8D2;
+        font-size:16px;
+        text-align:center;
+        padding-bottom:10px;
     }
-
-
 /**
-* ============
-* === MenuBar ===
-* ============
+Menu
 **/
 
-.MenuBar {
+.active a {
+    color:#A11D5D;
+    font-size:16px;
+    font-weight:bold;
+}
+
+ .menu {
     height:50px;
-    background-color:#27616A;
-    margin-top:50px;
+    width:500px;
+    display:inline-block;
+    position:relative;
+    bottom:10px;
+    left:270px;
+}
+    .menu ul {
+        list-style-type:none;
+        vertical-align:top;
+        margin:0px auto 0;
+        width:550px;
+        
+    }
+        .menu ul li {
+             height:15px;
+             display:inline-block;
+            
+        }
+            .menu ul li a {
+                padding:20px;
+                display:block;
+                
+            }
+
+/**
+Slider
+**/
+ .slider {
+    margin:0px auto 0;
 }
 
 /**
-* ============
-* === menu ===
-* ============
+content
 **/
 
-.menu {
-   text-decoration:none;
-   list-style:none;
-   float:center;
-   padding-left:250px;
+.content {
+    margin-bottom:100px;
 }
 
-    .menu li {
-        float:left;
-        margin:15px 20px 10px 10px;
-    }
+/**
+bottombar
+**/
 
-        .menu li a {
-            text-decoration:none;
-            color:#FFFDFB;
-            text-transform:uppercase;
-        }
+.bottombar {
+    height:350px;
+    background-color:#323442;
+}
+
+/**
+contact
+**/
+
+.contact {
+    height:150px;
+    width:450px;
+    display:inline-block;
+    background-color:#5A6373;
+    margin-top:100px;
+}
+
+/**
+twitter
+**/
+
+.twitter {
+    height:150px;
+    width:450px;
+    display:inline-block;
+    background-color:#5A6373;
+    margin-top:100px;
+    vertical-align:top;
+    margin-left:80px;
+}
