@@ -3,31 +3,106 @@
 * === Colors used ===
 * ============
 
-#A11D5D - Pink
-#323442 - Dark Grey
-#5A6373 - Medium Grey
-#858D9C - Light Grey
-#FFF8D2 - Creme
+#6f7072 - Grey
+#a11266 - Pink
 
 **/
 
 /**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/**
 Fonts
 **/
+
  h1 {
-    color:#A11D5D;
-    font-size:22px;
+    color:#6f7072;
+    font-size:72px;
+    padding: 25px 0px 10px 150px;
+    margin: 0px auto 0;
+    
 }
+
 p {
-    color:#5A6373;
-    font-size:14px;
-}
-a {
-    text-decoration:none;
-    color:#FFF8D2;
+    color:#6f7072;
     font-size:14px;
     
 }
+
+a {
+    text-decoration:none;
+    color:#6f7072;
+    
+}
+
 /**
 * ============
 * === body ===
@@ -35,23 +110,27 @@ a {
 **/
  body {
     margin:0px;
-    background-color:#FFF8D2;
-    font-family:Droid Sans Mono;
+    font-family:Droid Sans;
     padding:0px;
 }
+
 /**
-TopBar
+container
 **/
- .topbar {
-    height:50px;
-    background-color:#323442;
-}
-/**
-Container
-**/
- .container {
-    Width:1000px;
+
+.container {
+    width:1000px;
     margin:0px auto 0;
+}
+
+/**
+topbars
+**/
+
+.topbar1 {
+    height:2px;
+    background-color:#6f7072;
+    margin-top:15px;
 }
 
 /**
@@ -59,95 +138,100 @@ logo
 **/
 
 .logo {
-    width:200px;
-    display:inline-block;
+    height:130px;
 }
 
-    .logo p {
-        color:#FFF8D2;
-        font-size:16px;
-        text-align:center;
-        padding-bottom:10px;
-    }
 /**
-Menu
+menu
 **/
 
-.active a {
-    color:#A11D5D;
-    font-size:16px;
-    font-weight:bold;
+.menu lu {
+    padding:0px;
 }
 
- .menu {
-    height:50px;
-    width:500px;
-    display:inline-block;
-    position:relative;
-    bottom:10px;
-    left:270px;
-}
-    .menu ul {
+    .menu li {
         list-style-type:none;
-        vertical-align:top;
-        margin:0px auto 0;
-        width:550px;
+        float:left;
+        width:250px;
+        text-align:center;
     }
-        .menu ul li {
-             height:15px;
-             display:inline-block;
+
+        .menu li a {
+            font-size:22px;
+            display:block;
+            padding-top:10px;
         }
-            .menu ul li a {
-                padding:20px;
-                display:block;
-            }
+
 
 /**
-Slider
+mainbox
 **/
 
- .slider {
-    margin:0px auto 0;
+.mainbox {
+    margin-top:100px;
 }
 
+
 /**
-content
+snippets
 **/
 
-.content {
-    margin-bottom:100px;
+.snippet1 {
+    width:500px;
+    float:left;
 }
 
-/**
-bottombar
-**/
+.snippet2{
+    width:500px;
+    float:right;
+}
 
-.bottombar {
+    .snippet1 p {
+        padding:80px 5px 5px 5px;
+        text-align:center;
+        height:115px;
+    }
     
-    background-color:#323442;
+    .snippet2 p {
+        padding:80px 5px 5px 5px;
+        text-align:center;
+        height:115px;
+    }
+
+/**
+menupics
+**/
+
+.menupic1 {
+   width:500px;
+   float:right;
+}
+
+.menupic2 {
+    width:500px;
+    float:left;
 }
 
 /**
-contact
+footerbar
 **/
 
-.contact {
-    height:150px;
-    width:450px;
-    display:inline-block;
-    background-color:#5A6373;
-    margin-top:100px;
+.footerbar {
+    height:200px;
+    background-color:#6f7072;
+    margin-top:150px;
 }
 
 /**
-twitter
+social
 **/
 
-.twitter {
-    display:inline-block;
-    margin-top:100px;
-    vertical-align:top;
-    margin-left:80px;
-    width:450px;
-    padding-bottom:50px;
+.social {
+    position:relative;
+    top:80px;
+    left:340px;
 }
+
+    .social a {
+        padding-right:80px;
+    }
